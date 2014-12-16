@@ -28,12 +28,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/google_sign_in"
+                android:textSize="20sp"/>
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/plus_sign_in_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign In/ Register* for Local Account:"
+                android:textSize="20sp"
+                />
 
             <LinearLayout
                 android:id="@+id/plus_sign_out_buttons"
@@ -96,7 +106,19 @@
                     android:text="@string/action_sign_in"
                     android:textStyle="bold"/>
 
+
+
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="*Please fill out email and password you wish to register!!!"
+                    android:textSize="15sp"/>
+                </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id ="@+id/grid_item">
+
+    <TextView
+        android:id="@+id/timeRemain"
+        android:paddingRight="80dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@color/accent_material_light"/>
 
     <GridView
         android:id="@+id/easy_mode"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:numColumns="3"
-        android:verticalSpacing="60dp"
-        android:horizontalSpacing="50dp"
-        android:columnWidth="70dp"
+        android:numColumns="4"
+        android:verticalSpacing="30dp"
+        android:horizontalSpacing="15dp"
+        android:columnWidth="60dp"
+        android:paddingTop="80dp"
         android:stretchMode="columnWidth"
-        android:gravity="center">
+        android:gravity="center"
+        android:background="@drawable/background_pokeball">
     </GridView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_item_image"
+        />
+
 
 </LinearLayout>
